@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p {
+    color:white; 
+    background-color:black;
+    font-size: 30px;
+    border: 10px dashed rgb(51, 51, 51);
+    padding: 20px;
+    /* font-weight:bold */
+
+    text-align:center;
+    
+}
+
+h1 {
+    color:rgb(150, 34, 34);
+    font-size:60px;
+}
+
+.special {
+    color:blue;
+    background-color:orangered;
+}
+
+.special:hover {
+    background-color: antiquewhite;
+}
+
+.cool {
+    font-weight:bold;
+    text-decoration:underline;
+    font-style:italic;
+}
+
+.dim {
+    background-color:burlywood;
+    padding:10px;
+    margin:10px;
+}
+
+.spam {
+    background-color:darkkhaki;
+    padding:10px;
+    margin:10px;
+}
+
+a {
+    color:aquamarine;
+    text-decoration:none;
+}
+
+a:visited {
+    color:blue;
+}
+
+a:hover {
+    background-color: antiquewhite;
+}
+
+/* css rules that are further down have higher specificity */
