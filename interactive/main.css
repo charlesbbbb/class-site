@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(56, 56, 56);
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 21px;;
+}
+
+img {
+    max-width: 200px;
+}
+
+.revealer {
+    font-style: italic;
+    color:aqua;
+    cursor:cell;
+}
+
+.revealer:hover {
+    color:aquamarine;
+}
+
+.hidden {
+    position:fixed;
+    bottom:5vh;
+    left:5vw;
+    opacity:0;
+    transition: opacity 1s;
+}
+
+.revealer:hover + .hidden {
+    opacity:1;
+}
+
+.shapeshifter {
+    background-color: aquamarine;
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    position:fixed;
+    bottom:10vh;
+    right:25vw;
+
+    transition: all 0.5s;
+}
+
+.shapeshifter:hover {
+    background-color: aqua;
+    transform: scale(1.5);
+    border-radius: 0%;
+    cursor:zoom-in;
+}
+
+.hidden2 {
+    cursor:default;
+    position:fixed;
+    top:5vh;
+    right:5vw;
+    opacity:0;
+
+    transition: opacity 0.5s;
+}
+
+.shapeshifter:hover + .hidden2 {
+    opacity:1;
+}
