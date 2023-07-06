@@ -14,7 +14,7 @@ body {
 .big-ol-box {
     display: flex;
     flex-direction: column;
-    width:100vw;
+    /* width:100vw; */
     justify-content: center;
     align-items: center;
 }
@@ -45,4 +45,8 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
+}
+
+img {
+    max-height: 700px;
 }

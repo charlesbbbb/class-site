@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:aquamarine;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 1s;
+}
+
+body.dark {
+    background-color: rgb(0, 104, 104);
+}
+
+.flex {
+    display: flex;
+    height:100vh;
+    width:100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    /* background-color:antiquewhite; */
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.chair {
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    max-height: 150px;
+    opacity:0;
+    transition: opacity 1s;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(89, 180, 150);
+    transition: background-color 1s, box-shadow 1s, transform 1s;
+    animation: spin 1s linear infinite;
+    animation-play-state: paused;
+}
+
+.box.dark {
+    background-color: aqua;
+}
+
+.box.glow {
+    background-color: rgb(255, 255, 159);
+    box-shadow: 0 0 10px 5px rgb(255, 255, 159);
+}
+
+.box.spin {
+    animation-play-state:running;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.chair.reveal {
+    opacity:1;
+}
+
+.reveal-btn.hidden {
+    opacity:0;
+    
+}
+
+.draggable {
+    cursor:grab;
+}
